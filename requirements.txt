@@ -1,6 +1,7 @@
 asgiref==3.5.0
 asn1crypto==1.5.1
 autopep8==1.4.4
+boto3==1.24.56
 Django==4.0.6
 django-allauth==0.39.1
 django-cors-headers==3.13.0
