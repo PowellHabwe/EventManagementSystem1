@@ -54,7 +54,7 @@ urlpatterns = [
     path('b2c/result', views.call_back, name="b2cr"),
     # path('b2c/trial', views.b2ctemplate, name="b2ctrial"),
     path('b2c/', views.b2c, name="b2c"),
-    path('b2c2/', views.b2c2, name="b2c"),
+    # path('b2c2/', views.b2c2, name="b2c"),
 
     path('totals/', views.event_totals, name="totals"),
     # path('totals2/', views.b2c_totals, name="totals2"),
