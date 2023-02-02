@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_daraja',
     'my_app',
-    'storages',
     'whitenoise.runserver_nostatic',
 ]
 
@@ -141,13 +140,6 @@ STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-# STATICFILES_DIRS = (
-#     os.path.join(BASE_DIR, 'static'),
-# )
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -160,22 +152,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-# EMAIL_USER = 'powellhabwenawal@gmail.com'
-# EMAIL_PASS = 'qpvxuzvcnmwsccgp'
 EMAIL_HOST_USER = 'powellhabwe@gmail.com'
 EMAIL_HOST_PASSWORD = 'nzsvhwoogttahgrp'
-# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 STRIPE_PUBLIC_KEY = "pk_test_51LCLx0Ggbx1D1KRagwLJZRqDpR6aSQA48S8zkhxhhR1o3TPjAZNPhaaqNRI9STP4WhyFzItxN6oPJGRujYv4NWzp009Wi9hStp"
 STRIPE_SECRET_KEY = "sk_test_51LCLx0Ggbx1D1KRaPqS6edKUANoZ6XQ6FkVN2NjdvJJpkHT4xrUSqgerUtGmgcyTtAsF9bImf5vqZ4UXHZ2uzo6C0091rKjA9w"
 
-
-AWS_ACCESS_KEY_ID = "AKIAUFT4U7ESG4YUSNTO"
-AWS_SECRET_ACCESS_KEY = "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"
-AWS_STORAGE_BUCKET_NAME = "django-eventmanagementsystem"
-
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
 
 # DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
